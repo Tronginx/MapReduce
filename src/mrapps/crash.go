@@ -8,14 +8,16 @@ package main
 // go build -buildmode=plugin crash.go
 //
 
-import "MapReduce/mr"
-import crand "crypto/rand"
-import "math/big"
-import "strings"
-import "os"
-import "sort"
-import "strconv"
-import "time"
+import (
+	"MapReduce/mr"
+	crand "crypto/rand"
+	"math/big"
+	"os"
+	"sort"
+	"strconv"
+	"strings"
+	"time"
+)
 
 func maybeCrash() {
 	max := big.NewInt(1000)
